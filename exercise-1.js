@@ -36,6 +36,7 @@ console.log(sum(8, 11));
  };
 
  var getAverageTime = function(person) {
+   "use strict";
    var numRuns = Object.keys(person).length;
    var totalTime = sum(person);
    function sum(obj) {
@@ -92,7 +93,7 @@ function addToBank(account, savings, retirement, checking) {
 
 function getSumOfAccounts(account) {
     "use strict";
-    // return ...
+    return account.checking + account.savings + account.retirement;
 }
 
 addToBank(MattsBankAccount, 100, 10, 1);

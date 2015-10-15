@@ -36,7 +36,18 @@ var mark = {
 };
 
 var timesRan = Object.keys(person).length;
-// var totalTime = 0;
+
+function sum(person) {
+  var sum = 0;
+  for( var el in person ) {
+    if( person.hasOwnProperty( el ) ) {
+      sum += parseFloat( person[el] );
+    }
+  }
+  return sum;
+}
+
+var summed = sum( person );
 
 var getAverageTime = function(person) {
   var totalTime = 0;

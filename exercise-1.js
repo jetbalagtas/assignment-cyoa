@@ -18,46 +18,45 @@ console.log(sum(8, 11));
  * Write a JavaScript program that calculates the average time for this marathoner to complete the full marathon (26.2mi)
  */
 
-var matt = {
-    finishingTime1: 240, //in minutes
-    finishingTime2: 210.4,
-    finishingTime3: 235.1,
-    finishingTime4: 208.9,
-    finishingTime5: 197.5,
-    finishingTime6: 227.4
-};
+ var matt = {
+     finishingTime1: 240, //in minutes
+     finishingTime2: 210.4,
+     finishingTime3: 235.1,
+     finishingTime4: 208.9,
+     finishingTime5: 197.5,
+     finishingTime6: 227.4
+ };
 
-var mark = {
-    finishingTime1: 120, //in minutes
-    finishingTime2: 110.4,
-    finishingTime3: 135.1,
-    finishingTime4: 108.9,
-    finishingTime5: 97.5
-};
+ var mark = {
+     finishingTime1: 120, //in minutes
+     finishingTime2: 110.4,
+     finishingTime3: 135.1,
+     finishingTime4: 108.9,
+     finishingTime5: 97.5
+ };
 
-var timesRan = Object.keys(person).length;
+ var mattRuns = 0;
+ var i;
 
-function sum(person) {
-  var sum = 0;
-  for( var el in person ) {
-    if( person.hasOwnProperty( el ) ) {
-      sum += parseFloat( person[el] );
-    }
-  }
-  return sum;
-}
+ for (i in mattRuns) {
+     if (mattRuns.hasOwnProperty(i)) {
+         count++;
+     }
+ }
 
-var summed = sum( person );
+ var markRuns = 0;
+ var i;
 
-var getAverageTime = function(person) {
-  var totalTime = 0;
-    for(var i = 0; len = person.length; i < len++) {
-      totalTime += person[i][1];
-    }
-};
+ for (i in markRuns) {
+     if (markRuns.hasOwnProperty(i)) {
+         count++;
+     }
+ }
 
-console.log(getAverageTime(matt));
-console.log(getAverageTime(mark));
+ var getAverageTime = function(person) {
+     "use strict";
+     // ... return ...
+ }
 
 
 /**

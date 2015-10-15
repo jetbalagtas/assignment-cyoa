@@ -35,28 +35,29 @@ console.log(sum(8, 11));
      finishingTime5: 97.5
  };
 
- var mattRuns = 0;
- var i;
-
- for (i in mattRuns) {
-     if (mattRuns.hasOwnProperty(i)) {
-         count++;
-     }
- }
-
- var markRuns = 0;
- var i;
-
- for (i in markRuns) {
-     if (markRuns.hasOwnProperty(i)) {
-         count++;
-     }
- }
-
  var getAverageTime = function(person) {
-     "use strict";
-     // ... return ...
+   var numRuns = Object.keys(person).length;
+   var totalTime = sum(person);
+   function sum(obj) {
+     var sum = 0;
+     for(var i in obj) {
+       if(obj.hasOwnProperty(i)) {
+         sum += parseFloat(obj[i]);
+       }
+     }
+     return sum;
+   }
+     return totalTime / numRuns;
  }
+
+console.log(getAverageTime(matt));
+console.log(getAverageTime(mark));
+
+// OMG, this ^ took a while! I hope I remember how to do it, lolz!
+// After reading it, trying to understand the logic, I realized
+// that I was making things more complicated than it should be.
+// There's probably a simpler way to do it but I'm happy for now.
+// Thanks for this exercise! Wish I could finish it all!
 
 
 /**

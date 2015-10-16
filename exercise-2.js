@@ -28,7 +28,9 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
-
+var doSomethingCool = function() {
+  console.log("Something Cool!");
+}
 
 // -----------------------------------------------
 
@@ -48,7 +50,11 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+var sayHi = function() {
+  alert("Hello, World!");
+}
 
+setTimeout(sayHi, 2000);
 
 // -----------------------------------------------
 
@@ -78,7 +84,7 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+z then y; because log y is timedout until after log z is executed
 
 // -----------------------------------------------
 
@@ -100,7 +106,10 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+var reverseStr = function(str) {
+  var arr = str.split("").reverse().join("");
+  return str;
+};
 
 // -----------------------------------------------
 
@@ -134,7 +143,61 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+function spanishColor(colorName) {
+  color = {
+  "rojo": "#ff0000",
+  "blanco": "#ffffff",
+  "azul": "#0000ff",
+  "verde": "#00ff00",
+  "negro": "#000000"
+  }
+  return color[colorName];
+}
 
+// console.log("rojo");
+
+// var spanishColor = {
+//   "rojo": "#ff0000",
+//   "blanco": "#ffffff",
+//   "azul": "#0000ff",
+//   "verde": "#00ff00",
+//   "negro": "#000000",
+//   colorName : function() {
+//     return spanishColor.toLowerCase;
+//   }
+// }
+//
+// console.log("rojo");
+
+// spanishColor.colorName.toLowerCase(rojo): "#ff0000";
+// spanishColor.colorName.toLowerCase(blanco): "#ffffff";
+// spanishColor.colorName.toLowerCase(azul): "#0000ff";
+// spanishColor.colorName.toLowerCase(verde): "#00ff00";
+// spanishColor.colorName.toLowerCase(negro): "#000000";
+// colorName.rojo = "#ff0000";
+// colorName.blanco = "#ffffff";
+// colorName.azul = "#0000ff";
+// colorName.verde = "#00ff00";
+// colorName.negro = "#000000";
+// };
+
+//   function(colorName) {
+//   if (colorName.toLowerCase() === "rojo") {
+//     return "#ff0000";
+//   }
+//   else if (colorName.toLowerCase() === "blanco") {
+//     return "#ffffff";
+//   }
+//   else if (colorName.toLowerCase() === "azul") {
+//     return "#0000ff";
+//   }
+//   else if (colorName.toLowerCase() === "verde") {
+//     return "#00ff00";
+//   }
+//   else if (colorName.toLowerCase() === "negro") {
+//     return "#000000";
+//   }
+// };
 
 // -----------------------------------------------
 
@@ -151,7 +214,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo =
+  "bar";
 
 // -----------------------------------------------
 
@@ -174,7 +238,11 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
-
+var callNTimes = function(callback) {
+  for(var i = 0; i < i.length; i++) {
+    console.log(callback);
+  }
+};
 
 
 // -----------------------------------------------

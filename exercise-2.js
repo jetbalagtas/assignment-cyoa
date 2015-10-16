@@ -30,7 +30,7 @@ function doSomethingCool() {
 // Put your answer below -------------------------
 var doSomethingCool = function() {
   console.log("Something Cool!");
-}
+};
 
 // -----------------------------------------------
 
@@ -52,7 +52,7 @@ setTimeout(sayHi, 2000);
 // Put your answer below -------------------------
 var sayHi = function() {
   alert("Hello, World!");
-}
+};
 
 setTimeout(sayHi, 2000);
 
@@ -144,14 +144,14 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 function spanishColor(colorName) {
-  color = {
+  var colores = {
   "rojo": "#ff0000",
   "blanco": "#ffffff",
   "azul": "#0000ff",
   "verde": "#00ff00",
   "negro": "#000000"
-  }
-  return color[colorName];
+};
+  return colores[colorName];
 }
 
 // console.log("rojo");
@@ -214,8 +214,8 @@ function spanishColor(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-var foo =
-  "bar";
+var foo = {
+  foo = "bar"};
 
 // -----------------------------------------------
 
@@ -271,7 +271,17 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
+function gameWithScoring() {
+  var score = 0;
 
+  var increaseScore = function() {
+    score++;
+  };
+
+  var decreaseScore = function() {
+    score--;
+  };
+}
 
 // -----------------------------------------------
 
@@ -291,7 +301,11 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+var addNumbers = function(numberA, numberB) {
+  return(numberA + numberB);
+};
 
+var twoPlusTwo = addNumbers(2,2);
 
 // -----------------------------------------------
 
@@ -317,7 +331,17 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+// speed was being set to NaN because the function did not set a condition for it to be assigned something else
 
+var speed = 0;
+
+var accelerate = function(amount) {
+  if (speed === 0) {
+    return speed += 1;
+  } else {
+    return amount;
+  }
+};
 
 // -----------------------------------------------
 

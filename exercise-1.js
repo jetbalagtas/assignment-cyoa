@@ -59,6 +59,10 @@ console.log(getAverageTime(mark));
 // that I was making things more complicated than it should be.
 // There's probably a simpler way to do it but I'm happy for now.
 // Thanks for this exercise! Wish I could finish it all!
+// Thanks to Sirko for the solution!
+// http://stackoverflow.com/questions/16449295/a-concise-way-to-sum-the-values-of-a-javascript-object
+// Thanks to Box9 for the example on Object.keys!
+// http://stackoverflow.com/questions/5533192/how-to-get-object-length
 
 
 /**

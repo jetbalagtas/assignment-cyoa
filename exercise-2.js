@@ -396,7 +396,8 @@ var callLater = function(timeout, callback) {
 // ---------------------
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
 // ---------------------
-
+var bday = [11, 28];
+var largestNum = 0;
 function max(){
     "use strict";
     //...

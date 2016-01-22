@@ -1,8 +1,7 @@
 # Choose Your Own Adventure
 
 ### Quick note from Jet
-
-This is a simple text-and-alert-based based game to get some basic javascript training. Open the developer console when serving, to see the message(s).
+Part of our third week assignments, the 3rd week of October 2014, this is a simple text-and-alert-based based game to get some basic javascript training. Open the developer console when serving, to see the message(s).
 
 ## Description
 You will be creating a text based game that will allow the player to make decisions that determine their outcome.
